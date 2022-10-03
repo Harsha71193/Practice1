@@ -1,0 +1,23 @@
+package Sample2;
+
+public class Test2 {
+	
+public static void main(String[] args) {
+	
+	int org=123;
+	
+	int Rev=0;
+	
+	for(int i=org;i>0;i=i/10)  //123/10=12  12/10=1
+	{
+		
+		int rem=i%10;  //123%10= 3     //12%10=2	//1%10= 1
+		
+		Rev=Rev*10+rem;//32  32*10+1=321
+	}
+	
+	System.out.println(Rev);
+}
+	
+
+}
